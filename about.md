@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Nestor G. Pestelos, Jr. is a software developer from the Philippines. He builds web applications using [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails), likes to work with [data](https://en.wikipedia.org/wiki/Data_science), and is a practitioner of [infrastructure-as-code](https://en.wikipedia.org/wiki/Infrastructure_as_Code).
