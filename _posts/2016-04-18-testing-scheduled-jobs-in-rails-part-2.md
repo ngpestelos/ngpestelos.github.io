@@ -9,6 +9,6 @@ We noticed that the notifications did not go out as scheduled. The jobs typicall
 
 We also found one Arel scope uses its own hard-coded date range (it was perhaps a good idea at the time) and this affected our parameterized date range, casting more doubts on the reliability Arel scopes. One slippery part of Arel though is that it is easy to convince oneself that it works (for simple queries), but combining scopes with a (through `merge`) is a different matter.
 
-To regain confidence, we re-wrote our tests to exercise these scopes. We used ActiveSupport::DateHelpers to rig the time used by the system during test (similar to what TimeCop does). With this ability to freeze time, we could write our fixture data without having to worry about if the time is set properly. Our tests for the scope usually involves checking if a particular fixture data is included in the scope or not.
+To regain confidence, we re-wrote our tests to exercise these scopes. We used [ActiveSupport::Testing::TimeHelpers](http://api.rubyonrails.org/classes/ActiveSupport/Testing/TimeHelpers.html) to fix the system's time during test (similar to what [TimeCop](https://github.com/travisjeffery/timecop) does). With this ability to jump in time, we could write our fixture data without having to worry about settings. Our tests for the scope usually involves checking if a particular fixture data is included in the scope or not.
 
 Part 3.
